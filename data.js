@@ -19,5 +19,5 @@ export const menuArray = [
         ingredients: ["grain, hops, yeast, water"],
         price: 12,
         id: 2,
-    }
+    },
 ]

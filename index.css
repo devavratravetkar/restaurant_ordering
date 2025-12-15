@@ -5,7 +5,7 @@
 
 body {
     width: 600px;
-    height: 1161px;
+    /* height: 1161px; */
     border: 1px solid black;
     margin: 0 auto;
     font-family: 'Smythe', Georgia, 'Times New Roman', Times, serif;
@@ -104,4 +104,37 @@ article section button:hover {
     color: white;
     background-color: limegreen;
     border: 1.5px solid limegreen;
+}
+
+aside {
+    color: black;
+    font-size: 16px;
+    text-align: center;
+    margin: 45px;
+    display: flex;
+    flex-direction: column;
+}
+
+aside section {
+    display: flex;
+    justify-content: flex-start;
+    padding: 12px 0;
+}
+
+aside section button {
+    margin-left: 13px;
+    margin-right: auto;
+    color: #BBB;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+}
+
+aside h2, h3, h4 {
+    color: black;
+}
+
+aside h2 {
+    font-size: 28px;
+    margin-bottom: 42px;
 }
