@@ -87,7 +87,7 @@ function handleRemoveClick(uuid){
 }
 
 function handleOrderClick(){
-    console.log('show card payment details modal');
+    // console.log('show card payment details modal');
 
     modal.style.display = 'flex';
     modal.showModal();
