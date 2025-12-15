@@ -1,3 +1,40 @@
-body {
+* {
     margin: 0;
-} 
+    padding: 0;
+}
+
+body {
+    width: 600px;
+    height: 1161px;
+    border: 1px solid black;
+    margin: 0 auto;
+    font-family: 'Smythe', Georgia, 'Times New Roman', Times, serif;
+}
+
+header {
+    background-image: url('./images/header.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 167px;
+}
+
+header section {
+    padding: 46px 0 70px 46px;
+}
+
+h1, h2 {
+    color: #FFF;
+    font-weight: normal;
+    margin-bottom: 19px;
+}
+
+h1 {
+    font-size: 39px;
+    line-height: 24px;
+}
+
+h2 {
+    font-size: 23px;
+    line-height: 14px;
+}
