@@ -56,23 +56,30 @@ function handleRemoveClick(uuid){
 }
 
 function renderCart(cart){
-    // console.log('render cart');
-    cartEl.innerHTML = `<h2>Your order</h2>`;
-    cart.forEach(item => {
-        cartEl.innerHTML += `
-        <section>
-        <h3>${item.name}</h3>
-        <button data-remove="${item.uuid}">remove</button>
-        <h4>$${item.price}</h4>
-        <section>
-        `;
-    });
-    
     if(cart.length === 0){
         cartEl.style.display = 'none';
     } else if(cart.length !== 0){
         cartEl.style.display = 'flex';
     }
+    // console.log('render cart');
+    cartEl.innerHTML = `<h2>Your order</h2>`;
+    cart.forEach(item => {
+        cartEl.innerHTML += `
+        <section>
+            <h3>${item.name}</h3>
+            <button data-remove="${item.uuid}">remove</button>
+            <h4>$${item.price}</h4>
+        <section>
+        `;
+    });
+
+    cartEl.innerHTML += `
+        <section id="total">
+            <h3>Total Price:</h3>
+            <h4>$${cart.reduce((acc, item) => acc + item.price, 0 )}</h4>
+        </section>`;
+    
+    cartEl.innerHTML += "<button>Complete order</button>"
 }
 
 renderMenu();
